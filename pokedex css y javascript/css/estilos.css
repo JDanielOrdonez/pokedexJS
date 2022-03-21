@@ -1,0 +1,103 @@
+
+body{
+    background-image: url("../img/pokebola3.jpg");
+    background-size: cover;
+    font-family: Open Sans;
+}
+
+.poke{
+    width: 30%;
+    background-color: #EB5024;
+    height: 650px;
+    border-radius: 1%;
+    display: flex;    
+    flex-direction: column;/*poner un div bajo otro*/
+    margin: auto;
+    padding: 20px 0;
+    border: 3px solid #000;
+}
+.moves{
+    width: 50%;
+}
+.top, .middle,.bottom{
+    background-color: #90C421;    
+    border: 3px solid #fff;
+    width: 90%;
+    height: 46%;
+    border-radius: 2% 2% 2% 2%;
+    margin: auto;
+    /* box-shadow: 10px 10px rgb(49, 48, 48); */
+    display: flex;
+    align-items: center;       
+    justify-content: center;
+}
+.top{
+    flex-direction: column;
+}
+.bottom{    
+    flex-direction: column;
+    align-items: flex-start;
+    /* padding: 20px 0 0px 20px; */
+    justify-content: flex-start;
+}
+.bottom #name, #typePoke, .stats{
+    padding: 20px 0 0px 20px;
+}
+.middle{
+    display: flex;
+    align-items: center;       
+    justify-content: space-between;
+    font-size: 16x;
+    background-color: #EB5024;
+    color: #fff;
+    border-radius: 10%;    
+    border: 1px solid #000;
+    height: 8%;
+    width: 93%;
+    align-content: center;
+}
+.middle input{
+    background:none; 
+    color: #fff;
+    border:none; 
+    outline:0; 
+    font-size: 16px;  
+    width: 80px;  
+}
+.middle button{
+    background: #df4216;
+    padding: 5px 20px; 
+    border: none;
+    color: #fff;    
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20%;  
+    margin-right: 20px;
+}
+.middle button:hover{
+    background: #e18066;
+    
+}
+.bottom .stats #titleStats{
+    display: none;
+}
+
+@media screen and (max-width:1130px){
+    .middle input{
+        margin-left: 20px;
+    }
+    .middle button{
+        margin-right: 15px;
+    }
+    .poke{
+        width: 50%;
+    }
+}
+@media screen and (max-width:628px){
+    .poke{
+        width: 80%;
+    }
+    .top img{
+        width: 40%;
+    }
+}

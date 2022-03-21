@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    
+        <div class="poke">
+            <div class="top">
+                <img src="img/demo.jpg" width="50%" id="pokeImg" alt="">
+                <p id="id">-</p>
+            </div>
+            <div class="middle">            
+                <input type="text" placeholder="nombre" id="pokeName">   
+                <button onclick="fetchPokemon()">Buscar</button>        
+            </div>
+            <div class="bottom">
+                <span id="name">a</span>
+                <span id="typePoke">a</span>
+                <div class="stats"> a                   
+                    <p id="titleStats">Estadisticas</p>
+                    <span id="statsPokemon"></span>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="moves">
+            <span id="movements"></span>
+        </div>
+    
+
+    <footer>
+        <script src="js/js.js"></script>
+    </footer>
+</body>
+</html>
